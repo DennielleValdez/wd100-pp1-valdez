@@ -1,0 +1,284 @@
+html, body{
+    margin: 0;
+    scroll-behavior: smooth;
+    /* background-color: rgb(2 51 51 / 82%); */
+    background: url(../img/bg2.jpg);
+    background-size: contain;
+    background-repeat: repeat-y;
+}
+
+/* NAVIGATION */
+
+nav{
+    background-color: rgb(27 26 26 / 0%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 200;
+
+}
+.nav-menu{
+    display: flex;
+    list-style-type: none;
+}
+.nav-item a{
+    color:#fff;
+    font-size: 20px;
+    font-family: "Franklin Gothic";
+    font-weight: normal;
+    letter-spacing: 3px;
+    word-spacing: 5px;
+}
+.nav-item{
+    padding-right: 50px;
+    padding-bottom: 30px;
+}
+
+/* END OF NAVIGATION */
+
+/* BANNER */
+
+.banner-title{
+    position: absolute;
+    text-align: center;
+
+}
+.pos-relative{
+    position: relative;
+}
+
+.overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(8 8 8 / 73%);
+    top: 0;
+}
+
+.banner-title h1{
+    color: #ffffff;
+    font-weight: normal;
+    font-family: "Franklin Gothic";
+}
+
+/* Discover */
+.banner-top{
+    text-align: center;
+    font-size: 50px;
+    letter-spacing: 20px;
+
+}
+
+/* QUIRINO */
+.banner-middle{
+    text-align: center;
+    font-size: 80px;
+    letter-spacing: 50px;
+}
+
+/* PROVINCE */
+.banner-bottom{
+    text-align: center;
+    font-size: 80px;
+    letter-spacing: 30px;
+}
+
+/* "Your basket of happiness" */
+.banner-title p{
+    color: #fff;
+    font-family: "Segoe Script";
+    font-weight: normal;
+    font-size: 30px;
+    letter-spacing: 25px;
+}
+
+.banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bordered{
+    border-top: double #fff 15px;
+    border-bottom: double #fff 15px;
+    border-left: double #fff 15px;
+    border-right: double #fff 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+/* END OF BANNER */
+
+/* VIDEO EXTENSION FOR ABOUT AND VIDEO */
+
+.pos-relative{
+    position: relative;
+}
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about-container{
+    position: absolute;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.336);
+    width: 1000px;
+    border-radius: 50px;
+    top: 50px;
+}
+
+.about-container h1{
+    text-align: center;
+    font-size: 40px;
+    letter-spacing: 50px;
+    font-family: "Gill Sans MT";
+    font-weight: bolder;
+    color: antiquewhite;
+    margin: 50px;
+}
+.about-container p{
+    text-align: center;
+    font-size: 25px;
+    letter-spacing: 5px;
+    font-family: "Gill Sans MT";
+    font-weight: normal;
+    color: antiquewhite;
+    padding: 2px;
+    margin: 30px;
+}
+
+/* VIDEO EXTENSION with parts */
+.pos-relative{
+    position: relative;
+}
+
+.card-container{
+    position: absolute; 
+    /* To make the container go inside the background */
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    bottom: 10px;
+}
+
+.body{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: baseline;
+    background: whitesmoke;
+}
+.card{
+    height: 400px;
+    margin: 50px;
+    box-shadow: 5px 5px 20px black;
+    overflow: hidden;
+}
+
+.card-container img{
+    height: 500px;
+    width: 350px;
+    border-radius: 5px;
+    transition: 5s;
+}
+
+.intro{
+    height: 80px;
+    width: 350px;
+    padding: 6px;
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 88px;
+    background: rgb(27 27 27 / 73%);
+    color: white;
+    transition: .5s;
+}
+h1{
+    margin: auto;
+    font-size: 27px;
+    letter-spacing: 1px;
+    font-family: "Gill Sans MT";
+    font-weight: normal;
+}
+.card:hover{
+    cursor: pointer;
+}
+
+.card:hover .intro{
+    height: 100px;
+    bottom:100px;
+    background: #000000b7;
+    color:white;
+}
+
+.card:hover img{
+    transform: scale(1.1) rotate(-3deg);
+}
+
+/* COMMENT SECTION */
+
+.submit{
+    margin: 30px;
+    color: #daa520;
+    border: 1px solid #daa520;
+    padding: 10px 30px;
+    font-size: 18px;
+    letter-spacing: 3px;
+    cursor: pointer;
+    background: none;
+    transition: 0.6s;
+}
+
+.submit:hover{
+    background-color: #fff;
+    color: black;
+}
+
+.comment-container{
+    width: 2000px;
+    /* margin: 50px 0px; */
+    background-color: rgb(3 43 39 / 83%);
+    padding-top: 55px;
+}
+
+.comment-content{
+    width: 1000px;
+    margin: auto;
+    text-align: center;
+}
+.comment-content h1{
+    color:#fff;
+    font-weight: normal;
+    font-size: 45px;
+    margin-top: 0;
+}
+
+.comment-content input{
+    margin: 0;
+    background: none;
+    border: none;
+    border: 2px solid #fff;
+    color: #fff;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.comment-content textarea{
+    background: none;
+    border: none;
+    border: 2px solid #fff;
+    color: #fff;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 18px;
+    height: 300px;
+    margin-top: 5px;
+}

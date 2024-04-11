@@ -1,0 +1,130 @@
+/* NAVIGATION */
+
+nav{
+    background-color: rgb(27 26 26 / 0%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 200;
+
+}
+.nav-menu{
+    display: flex;
+    list-style-type: none;
+}
+.nav-item a{
+    color:#fff;
+    font-size: 20px;
+    font-family: "Franklin Gothic";
+    font-weight: normal;
+    letter-spacing: 3px;
+    word-spacing: 5px;
+}
+.nav-item{
+    padding-right: 20px;
+    padding-bottom: 30px;
+}
+
+/* END OF NAVIGATION */
+
+/* MAIN BACKGROUND */
+
+.pos-relative{
+    position: relative;
+}
+
+.overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(8 8 8 / 73%);
+    top: 0;
+}
+
+/* TITLE CONTAINER ENTIRE PAGE*/
+
+/* TITLE (Panagdadapun, Motorismo, Arts, Culture) */
+
+.title{
+    position: absolute;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.336);
+    width: 1000px;
+    top: 100px;
+    margin:auto;
+    padding: 20px;
+}
+
+.title h1{
+    font-size: 60px;
+    color:rgb(226, 147, 43);
+    font-weight: normal;
+    font-style: italic;
+    letter-spacing: 6px;
+    font-family: "Bernard MT";
+    margin: auto;
+}
+
+/* CAPTIONS for (Panagdadapun, Motorismo, Arts, Culture) */
+
+.caption-container{
+    position: absolute;
+    text-align: center;
+    background-color: rgb(242 241 244 / 14%);
+    width: 800px;
+    top: 238px;
+    padding: 20px;
+    /* align-items: center; */
+    height: 230px;
+    left: 100px;
+    border-radius: 30px;
+}
+
+.caption-container h1{
+    font-size: 30px;
+    color:#fff;
+    font-weight: normal;
+    /* letter-spacing: 6px; */
+    font-family: "Gill Sans MT";
+    margin: auto;
+    padding: 20px;
+}
+
+/* VIDEO CONTAINER */
+
+.video-container{
+    position: absolute;
+    width: 600px;
+    top: 102px;
+    left: 1080px;
+}
+
+.video-container video{
+    border-radius: 10px;
+}
+
+/* IMAGES */
+
+.images-container{
+    position: absolute; 
+    width: 1900px;
+    display: flex;
+    bottom: 50px;
+    justify-content: space-evenly;
+}
+
+.images-container img{
+    width: 400px;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10%;
+    box-sizing: border-box;
+    transition: transform 0.3s ease-in-out;
+}
+
+.images-container img:hover {
+    transform: scale(1.05);
+}
